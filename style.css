@@ -1,0 +1,60 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Contenedor de la tarjeta */
+.card {
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 40px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para darle dinamismo */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Imagen */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenido */
+.card-content {
+  padding: 20px;
+}
+
+/* Título */
+.card-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #007acc;
+}
+
+/* Párrafo */
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive: en pantallas pequeñas, ajustar márgenes */
+@media (max-width: 500px) {
+  .card {
+    margin: 20px 10px;
+  }
+}
+
